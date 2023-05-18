@@ -1,9 +1,9 @@
-// @use "sass-utils/variables";
+@use "sass-utils/variables";
 @use "sass-utils/generics";
 
 @use "base/reset";
 
-// @use "components/Navbar.scss";
+@use "components/navigation.scss";
 @use "pages/HomePage";
 // @use "components/EventDetail";
 

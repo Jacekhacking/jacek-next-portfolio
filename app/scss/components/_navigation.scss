@@ -1,0 +1,79 @@
+@use "../sass-utils/variables" as *;
+
+.nav-wrapper{
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(var(--clr-6-hsl), 0.98);
+
+    @media (max-width: 550px) {
+      height: 50px;
+    }
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    margin: 0 0.4rem;
+    font-family: var(--ff-cursive);
+    color: var(--clr-5);
+    font-size: 1.2rem;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      > * {
+        margin: 0 -0.8px;
+        padding: 0 10px;
+        text-align: center;
+        border-radius: 0;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid var(--clr-4);
+        &:hover {
+          border-left: 1px solid var(--clr-4);
+          border-right: 1px solid var(--clr-4);
+          border-top: 1px solid var(--clr-4);
+          border-bottom: 1px solid transparent;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      display: none;
+    } 
+}
+
+
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    transition: all 0.4s ease-in-out;
+    z-index: 101;
+    span {
+      height: 2px;
+      width: 28px;
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+    span:not(:last-child) {
+      margin-bottom: 7px;
+    }
+    :hover {
+      cursor: pointer;
+      span {
+        background-color: hsl(var(--clr-4-hsl));
+      }
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+}

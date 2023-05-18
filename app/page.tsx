@@ -4,9 +4,10 @@ import Nav from './components/navigation/Nav';
 
 export default function Home() {
   return (
-    <section className="home_wrapper">
+    <section className="home-wrapper">
       <Nav />
-      <h2 className="about_text">Hi, I'm Jacek!</h2>
+      <h2 className="about-text">Hi, I'm Jacek!</h2>
+      <p>A Software Developer from Salt Lake City, Utah!</p>
     </section>
   );
 }

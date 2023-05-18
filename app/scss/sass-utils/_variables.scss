@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Koulen&display=swap');
 // Typography 
 $bodyFont :'Inter', sans-serif;
 $bold: 600;
 $semiBold: 500;
 $base: 300;
- 
+
+
+$white-100: 351, 8%, 92%;
+$clr-1: #41436a;
+$clr-1-hsl: 237, 24%, 34%;
+$clr-2: #974063;
+$clr-2-hsl: 336, 40%, 42%;
+$clr-3: #F54468;
+$clr-3-hsl: 348, 90%, 61%;
+$clr-4: #FF9677;
+$clr-4-hsl: 14, 100%, 73%;
+$clr-5:#b5b5b5;
+$clr-5-hsl: 0, 0%, 71%;
+$clr-6:#1A1A1B;
+$clr-6-hsl: 240, 2%, 10%;
+
+
+$spacing-one: calc(1rem * 0.5);
+$spacing-two: cal(1rem);
+$spacing-three: calc(2.5rem);
+
+$ff-koulen: Koulen, cursive;
+$ff-sans-serif: Lato, sans-serif;

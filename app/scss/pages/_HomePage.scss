@@ -1,6 +1,6 @@
 @use "../sass-utils/variables" as *;
 
-.home_wrapper {
+.home-wrapper {
     display: flex;
     padding: 0rem;
     align-items: center;
@@ -35,7 +35,7 @@
       }
 }
 
-.about_text{
+.about-text{
 
     padding-right: 2rem;
     text-align: center;
@@ -43,7 +43,8 @@
     -webkit-text-fill-color: transparent;
     font-size: 9rem;
     line-height: 1.2;
-    font-family: var(--ff-cursive);
+    font-family: $ff-koulen;
+    text-transform: uppercase;
     @media (max-width: 800px) {
       font-size: 5rem;
     }
