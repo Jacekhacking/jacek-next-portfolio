@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import NavItems from './NavItems';
 import Link from 'next/link';
 import NextJsImage from '../NextJsImage';
+import Backdrop from './Backdrop';
+import SideDrawer from './SideDrawer';
 
 const Nav = () => {
   //state and toggle for sideDrawer
@@ -33,7 +35,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div>
+    <div className="nav-wrapper">
       <Link
         href="/"
         onClick={() => {
@@ -41,15 +43,15 @@ const Nav = () => {
         }}
       >
         <NextJsImage
-          height={'50px'}
-          width={'50px'}
+          height={'80px'}
+          width={'80px'}
           imagePath={'/logo.png'}
           alt={'test'}
         />
       </Link>
 
       <div
-        className={hamburgerActive}
+        className={`${hamburgerActive} hamburger`}
         onClick={() => {
           toggleSideDrawer();
           toggleHamburger();
@@ -60,25 +62,25 @@ const Nav = () => {
         <span />
       </div>
 
-      {/* {sideDrawer && (
+      {sideDrawer && (
         <Backdrop
           onClick={() => {
             toggleSideDrawer();
             toggleHamburger();
           }}
         />
-      )} */}
+      )}
       {sideDrawer && (
-        <div>
-          <div>
+        <SideDrawer>
+          <div className="nav-side-drawer">
             <NavItems
               toggleSideDrawer={toggleSideDrawer}
               toggleHamburger={toggleHamburger}
             />
           </div>
-        </div>
+        </SideDrawer>
       )}
-      <div>
+      <div className="nav-container">
         <NavItems
           toggleSideDrawer={toggleSideDrawer}
           toggleHamburger={toggleHamburger}
