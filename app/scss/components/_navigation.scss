@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: hsl($clr-6-hsl, 0.98);s
     background-color: $clr-6;
 
     @media (max-width: 550px) {
@@ -26,9 +25,9 @@
     font-size: 1.2rem;
 
     a{
-      color: white;
+      color: $clr-5;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       letter-spacing: 3px;
     }
     ul {
@@ -65,7 +64,6 @@
     align-items: center;
     margin: 0 0.4rem;
     font-family: $ff-koulen;
-    // color: hsl(var(--clr-mint-offwhite));
     color: white;
     font-size: 1.5rem;
     a{

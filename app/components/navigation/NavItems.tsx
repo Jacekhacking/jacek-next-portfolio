@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const NavItems = ({ toggleSideDrawer, toggleHamburger }: any) => {
-  const tabs = ['About', 'Projects', 'Resume'];
+  const tabs = ['about', 'projects', 'resume'];
 
   return (
     <>
